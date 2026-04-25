@@ -1,0 +1,66 @@
+# Game Scheduler — Default Configuration
+# Copy to data/config.yaml and fill in exe_path for your installed tools.
+
+orchestrator:
+  tools:
+    - tool_id: maa
+      display_name: "MAA (明日方舟)"
+      exe_path: ""
+      tool_type: cli
+      args_template: []
+      completion: process_exit
+      timeout_minutes: 60
+      icon: "🏰"
+      game_process_names: ["明日方舟.exe", "Arknights.exe"]
+
+    - tool_id: m9a
+      display_name: "M9A (1999)"
+      exe_path: ""
+      tool_type: replay
+      args_template: ["-d"]
+      completion: process_exit
+      timeout_minutes: 45
+      icon: "🎭"
+      game_process_names: ["Reverse1999.exe"]
+
+    - tool_id: okww
+      display_name: "ok-ww (鸣潮)"
+      exe_path: ""
+      tool_type: cli
+      args_template: []
+      completion: process_exit
+      timeout_minutes: 45
+      icon: "🌊"
+      game_process_names: ["Wuthering Waves.exe", "Client-Win64-Shipping.exe"]
+
+    - tool_id: bettergi
+      display_name: "BetterGI (原神)"
+      exe_path: ""
+      tool_type: gui_cli
+      args_template: []
+      completion: process_exit
+      timeout_minutes: 60
+      icon: "⚡"
+      game_process_names: ["YuanShen.exe", "GenshinImpact.exe"]
+
+    - tool_id: zzz
+      display_name: "ZZZ (绝区零)"
+      exe_path: ""
+      tool_type: headless
+      args_template: ["-o"]
+      completion: process_exit
+      timeout_minutes: 45
+      icon: "🎵"
+      game_process_names: ["ZenlessZoneZero.exe"]
+
+    - tool_id: aether
+      display_name: "aether-gazer-afk (深空之眼)"
+      exe_path: ""
+      tool_type: cli
+      args_template: ["--daily"]
+      completion: process_exit
+      timeout_minutes: 30
+      icon: "👁"
+      game_process_names: ["深空之眼.exe", "AetherGazer.exe"]
+
+  schedules: []

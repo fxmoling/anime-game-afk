@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "game-scheduler"
+version = "0.1.0"
+description = "多游戏自动化编排器 — 一键调度 MAA、ok-ww、BetterGI、M9A、ZZZ、aether-gazer-afk"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+
+dependencies = [
+    "loguru>=0.7",
+    "pyyaml>=6",
+    "pywebview>=5",
+    "croniter>=1.3",
+]
+
+[project.scripts]
+game-scheduler = "game_scheduler.ui.app:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
