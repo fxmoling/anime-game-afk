@@ -1,1 +1,0 @@
-"""Game Scheduler UI package."""
