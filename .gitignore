@@ -37,3 +37,9 @@ data/
 
 # Logs
 *.log
+.superpowers/
+__pycache__/
+node_modules/
+*.pyc
+data/
+config/scheduler_config.yaml
