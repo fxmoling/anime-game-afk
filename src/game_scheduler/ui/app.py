@@ -42,7 +42,7 @@ def main() -> None:
         min_size=(420, 600),
     )
 
-    webview.start(debug=False)
+    webview.start(debug="--debug" in sys.argv)
 
     manager.stop_scheduler()
 
