@@ -1,0 +1,76 @@
+tools:
+- tool_id: maa
+  name: MAA (明日方舟)
+  exe_path: ''
+  install_dir: ''
+  version: ''
+  status: not_found
+  icon: 🎯
+- tool_id: m9a
+  name: M9A (重返未来1999)
+  exe_path: C:\Users\Administrator\Desktop\M9A-win-x86_64-v3.18.0-beta.4-Full\MFAAvalonia.exe
+  install_dir: C:\Users\Administrator\Desktop\M9A-win-x86_64-v3.18.0-beta.4-Full
+  version: ''
+  status: ready
+  icon: 🕐
+- tool_id: okww
+  name: ok-ww (鸣潮)
+  exe_path: ''
+  install_dir: ''
+  version: ''
+  status: not_found
+  icon: 🌊
+- tool_id: bettergi
+  name: BetterGI (原神)
+  exe_path: ''
+  install_dir: ''
+  version: ''
+  status: not_found
+  icon: 🎮
+- tool_id: zzz
+  name: ZZZ (绝区零)
+  exe_path: ''
+  install_dir: ''
+  version: ''
+  status: not_found
+  icon: ⚡
+- tool_id: aether
+  name: 深空之眼 AFK
+  exe_path: ''
+  install_dir: ''
+  version: ''
+  status: not_found
+  icon: 👁
+schedules:
+- id: 5c069593
+  name: test
+  cron: 0 4 * * *
+  plan:
+    name: daily
+    waves:
+    - tasks:
+      - tool_id: okww
+        timeout_min: 20
+      label: ''
+    post_action:
+      kind: nothing
+      process_names: []
+      delay_seconds: 120
+  enabled: true
+  last_run: null
+- id: e27b770a
+  name: API test
+  cron: 0 6 * * *
+  plan:
+    name: morning
+    waves:
+    - tasks:
+      - tool_id: maa
+        timeout_min: 20
+      label: ''
+    post_action:
+      kind: nothing
+      process_names: []
+      delay_seconds: 120
+  enabled: true
+  last_run: null
